@@ -11,4 +11,4 @@ plugins {
 }
 
 rootProject.name = "ResponsiveFX"
-include("back","app")
+include("app")

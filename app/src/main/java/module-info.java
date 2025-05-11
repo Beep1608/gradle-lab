@@ -1,3 +1,7 @@
 module responsive {
-    requires nns;
+
+   requires javafx.controls;
+   requires javafx.graphics;
+
+   exports org.example;
 }

@@ -3,18 +3,21 @@
  */
 package org.example;
 
-public class App {
-    public String getGreeting() {
-        return "Hello World!";
-    }
+import javafx.application.Application;
+import javafx.scene.Scene;
+import javafx.scene.control.Label;
+import javafx.stage.Stage;
 
-    public String anotherMethod(){
-        return "Minions";
-    }
+public class App extends Application {
+   
 
     public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
-        System.out.println(new App().anotherMethod());
-       // System.out.println(new Main().);
+        launch(args);
+    }
+
+    @Override
+    public void start(Stage primaryStage) throws Exception {
+        primaryStage.setScene(new Scene(new DashboardPane()));
+        primaryStage.show();
     }
 }
